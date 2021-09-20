@@ -5,16 +5,25 @@ document.getElementById('deposit-btn').addEventListener('click',function()
    let anountValue = parseInt(amount);
    let depositMoney = document.getElementById('deposit-input').value;
    newDepositMoney = parseInt(depositMoney);
-
-   document.getElementById('deposit-amount').innerHTML = anountValue + newDepositMoney;
-   document.getElementById('deposit-input').value = ''; 
-
-
-    let totalAmount = document.getElementById('total-balance').innerHTML;
-    totalAmount = parseInt(totalAmount);
-    document.getElementById('total-balance').innerHTML = newDepositMoney + totalAmount;
-  
    
+   if(depositMoney >='0' && depositMoney<='9')
+   {
+    document.getElementById('deposit-amount').innerHTML = anountValue + newDepositMoney;
+    document.getElementById('deposit-input').value = ''; 
+ 
+ 
+     let totalAmount = document.getElementById('total-balance').innerHTML;
+     totalAmount = parseInt(totalAmount);
+     document.getElementById('total-balance').innerHTML = newDepositMoney + totalAmount;
+   }
+   else
+   {
+   
+     alert('Please Enter Value Amount');
+     document.getElementById('deposit-input').value = ''; 
+
+   }
+
 });
 //DEPOSIT BUTTON END HER 
 

@@ -84,10 +84,12 @@ html
 {
     background-color: #e7e6e6;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(190, 190, 190);
 }
 .add-withdrow 
 {
     background-color: #e7e6e6;
     border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(190, 190, 190);
 }
 /* CALCULATE HTML FILE STYLE END HERE  */
